@@ -2,8 +2,8 @@ const mongoose = require("mongoose");
 
 const TransactionSchema = mongoose.Schema(
   {
-  clientid: {
-      type: String,
+  id: {
+      type: Number,
       required: true,
   },
   client: {

@@ -1,9 +1,15 @@
 const express = require("express");
 const app = express();
+const cors = require("cors");
 const Transaction = require("./models/transaction.model.js");
 const mongoose = require("mongoose");
 const transactionRoute = require("./routes/transaction.route.js");
 require("dotenv").config(); // Load environment variables
+
+
+app.use(cors());
+
+
 
 app.use(express.json());
 
